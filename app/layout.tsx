@@ -1,5 +1,6 @@
 // app/layout.tsx
-import '../styles/globals.css'  // <--- add this line if missing
+import './globals.css'  // relative to app/
+  // <--- add this line if missing
 
 export const metadata = {
   title: 'Manisha Raparthi – Portfolio',
