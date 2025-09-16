@@ -1,15 +1,20 @@
-import './globals.css'
-import type { Metadata } from 'next'
+// app/layout.tsx
+import '../styles/globals.css'  // <--- add this line if missing
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Manisha Raparthi – Portfolio',
-  description: 'Portfolio website for Manisha Raparthi',
+  description: 'Portfolio website',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body>{children}</body>
     </html>
   )
 }
+
